@@ -10,6 +10,9 @@ export function useDetectDevTools(intervalMs = 1000) {
   const intervalRef = useRef<ReturnType<typeof setInterval> | null>(null);
   const detectingRef = useRef(false); // <- 标记当前是否正在检测
 
+  /**
+   * 开始检测
+   */
   const startDetection = useCallback(() => {
     if (detectingRef.current) return;
     setIsDetecting(true);

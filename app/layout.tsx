@@ -19,7 +19,7 @@ export default function RootLayout({
         </header>
 
         {/* 页面内容，添加上边距，避免被固定菜单遮挡 */}
-        <main className="pt-30">{children}</main>
+        <main className="pt-3">{children}</main>
       </body>
     </html>
   );
