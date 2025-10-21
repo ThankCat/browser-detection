@@ -14,12 +14,12 @@ export default function RootLayout({
     <html lang="en">
       <body>
         {/* 固定顶部菜单 */}
-        <header className="fixed top-0 left-0 w-full z-50 bg-white shadow">
+        <header className="fixed top-0 left-0 w-full h-12 z-50 bg-white shadow flex items-center justify-center">
           <NavigationMenuPage />
         </header>
 
         {/* 页面内容，添加上边距，避免被固定菜单遮挡 */}
-        <main className="pt-20">{children}</main>
+        <main className="pt-30">{children}</main>
       </body>
     </html>
   );
